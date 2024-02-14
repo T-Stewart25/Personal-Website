@@ -10,13 +10,13 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh> {/* Use group instead of Mesh if you're grouping multiple elements */}
-      <hemisphereLight intensity={0.15} groundColor="black"/> {/* Capitalized HemisphereLight */}
-      <pointLight intensity={1} /> {/* Capitalized PointLight */}
+      <hemisphereLight intensity={3} groundColor="black"/> {/* Capitalized HemisphereLight */}
+      <pointLight intensity={2} /> {/* Capitalized PointLight */}
       <spotLight 
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={5}
         castShadow
         shadow-mapSize={1024}
       />
@@ -25,7 +25,6 @@ const Computers = ({ isMobile }) => {
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile? [0,-3,-2.2] : [0, -3.5, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
-        
       />
     </mesh>
   )
