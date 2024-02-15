@@ -9,9 +9,12 @@ const SectionWrapper = (Component, idName) => function HOC() {
             variants={staggerContainer()}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.25}}
+            viewport={{ once: true, amount: 0.3}}
             className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         >
+            <span className="jas-span" id={idName}>
+                &nbsp;
+            </span>
             <Component />
         </motion.section>
     )
