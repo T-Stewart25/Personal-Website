@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Suspense, useEffect, useState } from "react";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { Canvas } from '@react-three/fiber'; // Import Mesh, HemisphereLight, and PointLight components
+import { Canvas, useFrame, extend } from '@react-three/fiber';
 
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+
+  const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
-    <mesh> {/* Use group instead of Mesh if you're grouping multiple elements */}
-      <hemisphereLight intensity={3} groundColor="black"/> {/* Capitalized HemisphereLight */}
-      <pointLight intensity={2} /> {/* Capitalized PointLight */}
+    <group >
+      <hemisphereLight intensity={6} groundColor="black"/>
+      <pointLight intensity={2} />
       <spotLight 
         position={[-20, 50, 10]}
         angle={0.12}
@@ -23,11 +24,11 @@ const Computers = ({ isMobile }) => {
       <primitive 
         object={computer.scene}
         scale={isMobile ? 0.75 : 1}
-        position={isMobile? [0,-4,-1] : [0, -3.5, -3]}
+        position={isMobile ? [0,-4,-1] : [0, -3.5, -3]}
         rotation={[-0.01, -0.2, -0.1]}
       />
-    </mesh>
-  )
+    </group>
+  );
 }
 
 const ComputersCanvas = () => {
@@ -47,7 +48,6 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
   }, []);
-  
 
   return (
     <Canvas
@@ -65,7 +65,7 @@ const ComputersCanvas = () => {
       </Suspense>
       <Preload all />
     </Canvas>
-  )
+  );
 }
 
 export default ComputersCanvas;
