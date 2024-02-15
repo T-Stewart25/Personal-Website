@@ -11,7 +11,7 @@ const Ball = (props) => {
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={4}/>
       <directionalLight position={[0,0,0.05]}/>
-      <mesh castShadow receiveShadow scale={3.5}>
+      <mesh castShadow receiveShadow scale={3.5} rotation={[0, props.rotation, 0]}> {/* Apply rotation */}
         <boxGeometry args={[1,1]}/>
         <meshStandardMaterial
           color="#b927c3"
@@ -27,6 +27,25 @@ const Ball = (props) => {
 }
 
 class BallCanvas extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rotation: 0, // Initial rotation
+    };
+  }
+
+  componentDidMount() {
+    this.rotationInterval = setInterval(() => {
+      this.setState(prevState => ({
+        rotation: prevState.rotation + 0.01 // Increment rotation
+      }));
+    }, 16); // Adjust rotation speed as needed
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.rotationInterval);
+  }
+
   render() {
     return (
       <Canvas
@@ -35,7 +54,7 @@ class BallCanvas extends React.Component {
       >
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls enableZoom={false}/>
-          <Ball imgUrl={this.props.icon}/>
+          <Ball imgUrl={this.props.icon} rotation={this.state.rotation}/> {/* Pass rotation */}
         </Suspense>
         <Preload all />
       </Canvas>
