@@ -41,9 +41,9 @@ const App = () => {
       <div style={{ marginTop: `${contentMarginTop}px`, zIndex:0 } }>
         <div>
           <About />
-          <Experience />
+          {/*<Experience />*/}
           <Tech />
-          <Works />
+          {/*<Works />*/}
           <Feedbacks />
         </div>
         <div className="relative z-0">
