@@ -32,22 +32,24 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary ">
+      <div style={{ zIndex: 999 }} className="relative bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center block">
           <Navbar ref={navbarRef} />
           <Hero />
         </div>
       </div>
-      <div style={{ marginTop: `${contentMarginTop}px` }}>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-      </div>
-      <div className="relative z-0">
-        <Contact />
-        <StarsCanvas />
+      <div style={{ marginTop: `${contentMarginTop}px`, zIndex:0 } }>
+        <div>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Feedbacks />
+        </div>
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
       </div>
     </BrowserRouter>
   );
