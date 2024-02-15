@@ -27,7 +27,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_USER_ID')
+  
+    // Define the form data object with the recipient email address
+    const formData = {
+      ...form,
+      to_email: 'Thomaslstewart1@gmail.com' // Add the recipient email address
+    };
+  
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
       .then((result) => {
         console.log(result.text);
         setLoading(false);
@@ -37,11 +44,13 @@ const Contact = () => {
           email: '',
           message: ''
         });
-      }, (error) => {
+      })
+      .catch((error) => {
         console.log(error.text);
         setLoading(false);
       });
   }
+  
 
   return (
     <div className='xl:mt-12 x;:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
