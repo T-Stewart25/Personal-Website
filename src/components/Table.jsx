@@ -22,6 +22,7 @@ function Table() {
             controls
             width="800px"
             height="450px"
+            preload="auto"
           />
         </div>
       </div>
