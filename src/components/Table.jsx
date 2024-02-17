@@ -11,7 +11,7 @@ function Table() {
         Proof of Concept of Automatic Drink Bar.
       </h1>
       <h2 className={styles.sectionSubText}>
-        Some portions have been speed for demonstration
+        Some portions have been sped for demonstration
       </h2>
         <div className="video-wrapper">
           <ReactPlayer
