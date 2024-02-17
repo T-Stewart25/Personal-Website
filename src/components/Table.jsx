@@ -30,14 +30,17 @@ function Table() {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl justify-center items-center"
       >
-        Currently, the project is on pause as I'm working on rebuilding the
-        table with a stronger and more practical design. Instead of using slow,
-        food-safe pumps, I plan to switch to ones commonly found in drink
-        dispensers for better performance. The dispenser nozzle is controlled by
-        a servo motor. The movement of the cup is being done by a linear
-        actuator but a quiter, quicker solution is in the works. All this is
-        managed by motor controllers and an Arduino microcontroller, with the
-        software for the table being written in C++.{" "}
+        At the moment, progress on the project has been temporarily halted as I
+        am focusing on constructing a new and improved table from scratch. This
+        redesigned table will utilize steel, offering a more practical, durable,
+        and aesthetically pleasing design. In place of the slower, food-safe
+        pumps previously employed, I am transitioning to more efficient options
+        commonly found in beverage dispensers, ensuring enhanced performance.
+        The dispenser nozzle will continue to be operated by a servo motor. Additionally,
+        while the cup's movement is currently facilitated by a linear actuator,
+        I am exploring alternative solutions for a more quick and quiet operation.
+        These systems are controlled by motor controllers and an Arduino
+        microcontroller, with the table's software programmed in C++.{" "}
       </motion.p>
     </div>
   );
