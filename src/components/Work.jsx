@@ -72,7 +72,7 @@ const Work = () => {
       <div className="w-20 h-20 rounded-full bg-[#b927c3]" />
       <div className="flex flex-col items-center">
         <div className="flex flex-row items-center">
-          <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider grid">
+          <p className="sm:text-[29px] text-[25px] text-secondary uppercase tracking-wider grid">
             May 2022 - August 2022 -
           </p>
           <div className="line" />
@@ -151,12 +151,12 @@ const Work = () => {
           </Card>
 
           <div className="line" />
-          <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider grid">
+          <p className="sm:text-[29px] text-[25px] text-secondary uppercase tracking-wider grid">
             - August 2022 - May 2023
           </p>
         </div>
         <div className="flex flex-row items-center">
-          <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider grid">
+          <p className="sm:text-[29px] text-[25px] text-secondary uppercase tracking-wider grid">
             May 2023 - August 2023 -
           </p>
           <div className="line" />
@@ -230,7 +230,7 @@ const Work = () => {
             </div>
           </Card>
           <div className="line" />
-          <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider grid">
+          <p className="sm:text-[29px] text-[25px] text-secondary uppercase tracking-wider grid">
             - August 2023 - Present
           </p>
         </div>
