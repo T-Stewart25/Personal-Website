@@ -88,10 +88,13 @@ const Work = () => {
                 alt="Lavner Thumbnail"
                 className="w-1/3 mx-auto"
               />
-              <p className="text-center sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+              <p className="text-center sm:text-[18px] text-[14px] text-white uppercase tracking-wider">
+                Lavner Education, Denver CO
+              </p>
+              <p className="text-center sm:text-[14px] text-[10px] text-secondary uppercase tracking-wider">
                 IT Intern
               </p>
-              <p className="text-center sm:text-[14px] text-[10px] text-white tracking-wider">
+              <p className="text-center sm:text-[12px] text-[8px] text-white tracking-wider">
                 During my first summer in college, I was fortunate to work in a
                 role that was pivotal in ensuring the smooth operation of
                 Lavner's summer camp. My primary responsibilities revolved
@@ -120,10 +123,13 @@ const Work = () => {
               style={{ maxWidth: "100%", maxHeight: "100%", overflow: "auto" }}
             >
               <img src={CSU} alt="CSU Thumbnail" className="w-full" />
-              <p className="text-center sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+              <p className="text-center sm:text-[18px] text-[14px] text-white uppercase tracking-wider">
+                Colorado State University, Fort Collins CO
+              </p>
+              <p className="text-center sm:text-[14px] text-[10px] text-secondary uppercase tracking-wider">
                 Undergraduate Teacher's Assistant
               </p>
-              <p className="text-center sm:text-[14px] text-[10px] text-white tracking-wider">
+              <p className="text-center sm:text-[12px] text-[8px] text-white tracking-wider">
                 During my sophomore year of college, I had the opportunity to
                 serve as a Teacher's Assistant for CS-150b. This role not only
                 helped me in honing my Python skills but also provided a
@@ -166,16 +172,19 @@ const Work = () => {
                 alt="Neurology Thumbnail"
                 className="w-1/4 mx-auto"
               />
-              <p className="text-center sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+              <p className="text-center sm:text-[18px] text-[14px] text-white uppercase tracking-wider">
+                National Neurology, Denver CO
+              </p>
+              <p className="text-center sm:text-[14px] text-[10px] text-secondary uppercase tracking-wider">
                 Network Contractor
               </p>
-              <p className="text-center sm:text-[14px] text-[10px] text-white tracking-wider">
+              <p className="text-center sm:text-[12px] text-[8px] text-white tracking-wider">
                 During my sophomore year summer, I was deeply engaged in
-                creating robust and adaptable work solutions for various
-                companies. My primary focus was on collaborating with National
-                Neurology, an organization striving to establish remote virtual
-                machine servers, enabling employees to seamlessly utilize their
-                on-site network resources. Notably, I managed to surpass their
+                creating robust and adaptable work solutions for companies. My
+                primary focus was on collaborating with National Neurology, an
+                organization striving to establish remote virtual machine
+                servers, enabling employees to seamlessly utilize their on-site
+                network resources. Notably, I managed to surpass their
                 expectations by achieving their goal with remarkable efficiency,
                 utilizing less than half of the allotted budget. This feat was
                 accomplished while ensuring the full functionality of the
@@ -197,10 +206,13 @@ const Work = () => {
               style={{ maxWidth: "100%", maxHeight: "100%", overflow: "auto" }}
             >
               <img src={CSU} alt="CSU Thumbnail" className="w-full" />
-              <p className="text-center sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+              <p className="text-center sm:text-[18px] text-[14px] text-white uppercase tracking-wider">
+                Colorado State University, Fort Collins CO
+              </p>
+              <p className="text-center sm:text-[14px] text-[10px] text-secondary uppercase tracking-wider">
                 Lead Undergraduate Teacher's Assistant
               </p>
-              <p className="text-center sm:text-[14px] text-[10px] text-white tracking-wider">
+              <p className="text-center sm:text-[12px] text-[8px] text-white tracking-wider">
                 During my time as a Lead Undergraduate Teaching Assistant, I had
                 the opportunity to develop a wide array of leadership and soft
                 skills while also deepening my understanding of coding and
