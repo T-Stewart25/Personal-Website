@@ -18,7 +18,7 @@ const App = () => {
   const navbarRef = useRef(null);
   const [contentMarginTop, setContentMarginTop] = useState(0);
   const [isSmallDevice, setIsSmallDevice] = useState(
-    window.innerWidth <= 768 // Set the breakpoint based on your needs
+    window.innerWidth <= 900 // Set the breakpoint based on your needs
   );
 
   useEffect(() => {
