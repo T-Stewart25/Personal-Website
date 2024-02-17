@@ -9,7 +9,7 @@ import close from "./close.svg";
 import gitlfs from "./tech/gitlfs.png";
 import CSU from "./CSU.png";
 import Lavner from "./Lavner.png";
-import Neurology from "Neurology.png";
+import Neurology from "./Neurology.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
