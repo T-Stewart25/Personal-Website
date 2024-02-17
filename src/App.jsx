@@ -17,6 +17,9 @@ import {
 const App = () => {
   const navbarRef = useRef(null);
   const [contentMarginTop, setContentMarginTop] = useState(0);
+  const [isSmallDevice, setIsSmallDevice] = useState(
+    window.innerWidth <= 768 // Set the breakpoint based on your needs
+  );
 
   useEffect(() => {
     const calculateContentMarginTop = () => {
@@ -32,6 +35,18 @@ const App = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallDevice(window.innerWidth <= 768); // Update the breakpoint based on your needs
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <div style={{ zIndex: 999 }} className="relative bg-primary">
@@ -40,12 +55,12 @@ const App = () => {
           <Hero />
         </div>
       </div>
-      <div style={{ marginTop: `${contentMarginTop}px`, zIndex:0 } }>
+      <div style={{ marginTop: `${contentMarginTop}px`, zIndex: 0 }}>
         <div>
           <About />
           <Tech />
-          <Table />
-          <Work />
+          {!isSmallDevice && <Table />}
+          {!isSmallDevice && <Work />}
           <Resume />
         </div>
         <div className="relative z-0">
