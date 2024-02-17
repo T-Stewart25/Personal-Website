@@ -213,7 +213,7 @@ const Work = () => {
                 Lead Undergraduate Teacher's Assistant
               </p>
               <p className="text-center sm:text-[12px] text-[8px] text-white tracking-wider">
-                During my time as a Lead Undergraduate Teaching Assistant, I had
+                After being promoted to Lead Undergraduate Teaching Assistant, I had
                 the opportunity to develop a wide array of leadership and soft
                 skills while also deepening my understanding of coding and
                 Python programming. Guiding students as they embarked on their
