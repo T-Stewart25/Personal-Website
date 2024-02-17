@@ -13,6 +13,7 @@ import {
     nodejs,
     mongodb,
     git,
+    gitlfs,
     figma,
     docker,
     meta,
@@ -31,7 +32,11 @@ import {
       title: "About",
     },
     {
-      id: "work",
+      id:"work",
+      title: "Work"
+    },
+    {
+      id: "resume",
       title: "Resume",
     },
     {
@@ -99,6 +104,10 @@ import {
     {
       name: "git",
       icon: git,
+    },
+    {
+      name: "gitlfs",
+      icon: gitlfs,
     },
     {
       name: "figma",

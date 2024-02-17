@@ -4,7 +4,7 @@ import ResumeImage from '../assets/Resume.png'; // Assuming Resume.png is locate
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 
-const Works = () => {
+const Resume = () => {
   return (
     <div style={{ textAlign: 'center', border: '1px solid #ccc', padding: '20px', borderRadius: '5px', maxWidth: '600px', margin: '0 auto' }}>
       <h2 className={`${styles.sectionHeadText} justify-center`}>Resume</h2>
@@ -15,4 +15,4 @@ const Works = () => {
   );
 }
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Resume, "resume");

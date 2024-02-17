@@ -129,6 +129,64 @@ transform: translateZ(0);
   height: 70vh; /* Adjust height as needed */
 }
 
+.card {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateY(4rem) scale(0.8);
+  transition: all 1000ms;
+
+  /* Demo purpose */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid rgb(203 213 225);
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+
+  height: 20rem;
+  width: 40rem;
+}
+.card__animated {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40rem;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 10rem;
+}
+
+
+
+
+.resume-card {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: translateY(4rem) scale(0.8);
+  transition: all 3000ms;
+}
+.resume-card__animated {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.line{
+  width: 4px;
+  height: 25rem;
+  background-color: #b927c3;
+  margin-left: 1rem; /* adjust this value as needed */
+  margin-right: 1rem; /* adjust this value as needed */
+}
+
+
+
 @keyframes mulShdSpin {
 0%,
   100% {

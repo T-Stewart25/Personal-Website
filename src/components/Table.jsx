@@ -11,7 +11,7 @@ function Table() {
     <div>
       <div className="containerVid">
         <h1 className={styles.sectionHeadText}>
-          Proof of Concept of Automatic Drink Bar.
+          Proof of Concept of Automatic Drink Table.
         </h1>
         <h2 className={styles.sectionSubText}>
           Some portions have been sped for demonstration
@@ -27,7 +27,7 @@ function Table() {
       </div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl justify-center"
+        className="mt-4 text-secondary text-[17px] max-w-3xl justify-center items-center"
       >
         Currently, the project is on pause as I'm working on rebuilding the
         table with a stronger and more practical design. Instead of using slow,

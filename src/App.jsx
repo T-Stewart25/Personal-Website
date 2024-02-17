@@ -8,9 +8,10 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  Resume,
   StarsCanvas,
   Table,
+  Work,
 } from "./components";
 
 const App = () => {
@@ -42,11 +43,10 @@ const App = () => {
       <div style={{ marginTop: `${contentMarginTop}px`, zIndex:0 } }>
         <div>
           <About />
-          {/*<Experience />*/}
           <Tech />
           <Table />
-          <Works />
-          {/*<Feedbacks />*/}
+          <Work />
+          <Resume />
         </div>
         <div className="relative z-0">
           <Contact />
