@@ -60,9 +60,9 @@ const App = () => {
         <div>
           <About />
           <Tech />
-          {!isSmallDevice && <Gallery />}
           {!isSmallDevice && <Table />}
           {!isSmallDevice && <Work />}
+          {!isSmallDevice && <Gallery />}
           <Resume />
         </div>
         <div className="relative z-0">

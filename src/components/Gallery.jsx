@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { styles } from '../styles';
+import { SectionWrapper } from '../hoc';
 
 import One from '../assets/Gallery/One.png';
 import Two from '../assets/Gallery/Two.png';
@@ -46,4 +47,4 @@ const ImageGallery = () => {
   );
 };
 
-export default ImageGallery;
+export default SectionWrapper(ImageGallery, "");
