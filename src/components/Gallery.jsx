@@ -38,7 +38,7 @@ const ImageGallery = () => {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
         {images.map((image, index) => (
           <div key={index} style={{ border: '3px solid #000', padding: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={image.src} alt={image.alt} />
+            <img src={image.src} alt={image.alt} preload/>
           </div>
         ))}
       </div>
