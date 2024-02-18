@@ -3,7 +3,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import { styles } from '../styles';
 
-import One from '../assets/Gallery/One.pdf';
+import One from '../assets/Gallery/One.png';
 import Two from '../assets/Gallery/Two.pdf';
 import Three from '../assets/Gallery/Three.pdf';
 import Four from '../assets/Gallery/Four.pdf';
