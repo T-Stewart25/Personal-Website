@@ -17,6 +17,7 @@ const Hero = () => {
           <div className='flex flex-col'>
           <p className={`{styles.heroSubText} mt-2 text-white-100`}>Programming and Machine Learning Student based in Denver</p>
           <p className={`{styles.heroSubText} mt-2 text-white-100 `}>My coding expertise is in Python, Java, C++, and Javascript</p>
+          <p className={`{styles.heroSubText} mt-2 text-white-100 `}>This website was built using Javascript, React, Tailwind, and Three js.</p>
           </div>
         </div>
         </div>
