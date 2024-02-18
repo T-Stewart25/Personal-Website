@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
 import { styles } from '../styles';
 
 import One from '../assets/Gallery/One.png';
-import Two from '../assets/Gallery/Two.pdf';
-import Three from '../assets/Gallery/Three.pdf';
-import Four from '../assets/Gallery/Four.pdf';
-import Five from '../assets/Gallery/Five.pdf';
-import Six from '../assets/Gallery/Six.pdf';
-import Seven from '../assets/Gallery/Seven.pdf';
-import Eight from '../assets/Gallery/Eight.pdf';
-import Nine from '../assets/Gallery/Nine.pdf';
-import Ten from '../assets/Gallery/Ten.pdf';
-import Eleven from '../assets/Gallery/Eleven.pdf';
-import Twelve from '../assets/Gallery/Twelve.pdf';
+import Two from '../assets/Gallery/Two.png';
+import Three from '../assets/Gallery/Three.png';
+import Four from '../assets/Gallery/Four.png';
+import Five from '../assets/Gallery/Five.png';
+import Six from '../assets/Gallery/Six.png';
+import Seven from '../assets/Gallery/Seven.png';
+import Eight from '../assets/Gallery/Eight.png';
+import Nine from '../assets/Gallery/Nine.png';
+import Ten from '../assets/Gallery/Ten.png';
+import Eleven from '../assets/Gallery/Eleven.png';
+import Twelve from '../assets/Gallery/Twelve.png';
 
 const ImageGallery = () => {
   const [images] = useState([
@@ -32,36 +30,18 @@ const ImageGallery = () => {
     { src: Twelve, alt: 'Twelve' },
   ]);
 
-  const [lightboxIndex, setLightboxIndex] = useState(0);
-  const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
-
-  const openLightbox = (index) => {
-    setLightboxIndex(index);
-    setLightboxIsOpen(true);
-  };
-
   return (
     <div>
       <div className='flex flex-row flex-wrap justify-center gap-10'>
-      <h2 className={`${styles.sectionHeadText} justify-center`}>Life-Style.</h2>
+        <h2 className={`${styles.sectionHeadText} justify-center`}>Life-Style.</h2>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
         {images.map((image, index) => (
-          <div key={index} style={{ border: '1px solid #000', padding: '10px' }}>
+          <div key={index} style={{ border: '3px solid #000', padding: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <img src={image.src} alt={image.alt} />
           </div>
         ))}
       </div>
-      {lightboxIsOpen && (
-        <Lightbox
-          mainSrc={images[lightboxIndex].src}
-          nextSrc={images[(lightboxIndex + 1) % images.length].src}
-          prevSrc={images[(lightboxIndex + images.length - 1) % images.length].src}
-          onCloseRequest={() => setLightboxIsOpen(false)}
-          onMovePrevRequest={() => setLightboxIndex((lightboxIndex + images.length - 1) % images.length)}
-          onMoveNextRequest={() => setLightboxIndex((lightboxIndex + 1) % images.length)}
-        />
-      )}
     </div>
   );
 };
