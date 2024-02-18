@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Table from './Table';
 import Work from './Work';
+import Gallery from './Gallery';
 
 export {
   Hero,
@@ -25,4 +26,5 @@ export {
   StarsCanvas,
   Table,
   Work,
+  Gallery
 }

@@ -12,6 +12,7 @@ import {
   StarsCanvas,
   Table,
   Work,
+  Gallery
 } from "./components";
 
 const App = () => {
@@ -59,6 +60,7 @@ const App = () => {
         <div>
           <About />
           <Tech />
+          {!isSmallDevice && <Gallery />}
           {!isSmallDevice && <Table />}
           {!isSmallDevice && <Work />}
           <Resume />
