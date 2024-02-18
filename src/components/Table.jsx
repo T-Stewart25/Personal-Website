@@ -2,6 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import TableVideo from "../assets/Table.mp4"; // Import the video file outside of the component
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -24,7 +25,7 @@ function Table() {
             controls
             width="800px"
             height="450px"
-            preload="all"
+            preload="auto"
           />
         </div>
       </div>
@@ -81,4 +82,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default SectionWrapper(Table, "");
