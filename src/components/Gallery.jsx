@@ -48,7 +48,7 @@ const ImageGallery = () => {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
         {images.map((image, index) => (
           <div key={index} style={{ border: '1px solid #000', padding: '10px' }}>
-            <img src={image.src} alt={image.alt} onClick={() => openLightbox(index)} />
+            <img src={image.src} alt={image.alt} />
           </div>
         ))}
       </div>
