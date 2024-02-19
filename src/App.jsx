@@ -59,11 +59,11 @@ const App = () => {
       <div style={{ marginTop: `${contentMarginTop}px`, zIndex: 0 }}>
         <div>
           <About />
+          {!isSmallDevice && <Work />}
+          <Resume />
           <Tech />
           {!isSmallDevice && <Table />}
-          {!isSmallDevice && <Work />}
           {!isSmallDevice && <Gallery />}
-          <Resume />
         </div>
         <div className="relative z-0">
           <Contact />
