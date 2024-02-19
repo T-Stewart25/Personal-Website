@@ -18,6 +18,7 @@ const Hero = () => {
           <p className={`{styles.heroSubText} mt-2 text-white-100`}>Programming and Machine Learning Student based in Denver</p>
           <p className={`{styles.heroSubText} mt-2 text-white-100 `}>My coding expertise is in Python, Java, C++, and Javascript</p>
           <p className={`{styles.heroSubText} mt-2 text-white-100 `}>This website was built using Javascript, React, Tailwind, and Three js.</p>
+          <p className={`{styles.heroSubText} mt-2 text-white-100 `}>All 3D modles are fully interactable!</p>
           </div>
         </div>
         </div>
