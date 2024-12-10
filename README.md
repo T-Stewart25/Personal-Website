@@ -116,7 +116,8 @@ Personal-Portfolio/
 ├── .babelrc               # Babel configuration
 ├── tailwind.config.js     # Tailwind CSS configuration
 ├── package.json           # Project dependencies and scripts
-└── README.md              # Documentation
+├── README.md              # Documentation
+└── LICENSE                # License information
 ```
 
 ---
