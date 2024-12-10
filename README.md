@@ -29,7 +29,7 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 
 ## **Demo**
 
-Check out the live demo here: [Thomas Stewart Portfolio](https://your-portfolio-link.com)
+Check out the live demo here: [Thomas Stewart Portfolio](https://thomasstewartpersonal.com)
 
 ---
 
