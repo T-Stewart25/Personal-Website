@@ -89,7 +89,7 @@ Check out the live demo here: [Thomas Stewart Portfolio](https://thomasstewartpe
 
 ### **Interactivity**
 
-- Hover over 3D models to interact with them.
+- Hover over and drag 3D models to interact with them.
 - Use the navigation bar to explore different sections.
 
 ---
